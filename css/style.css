@@ -7,10 +7,10 @@
 html,
 body {
     font-size: 62.5%;
-    font-family: 'Roboto', sans-serif;
+    font-family: "Roboto", sans-serif;
     font-weight: normal;
     background-image: linear-gradient(to right top, #060606, #050504, #030303, #020201, #000000);
-    color: #FFFFFF;
+    color: #ffffff;
 }
 
 img {
@@ -24,7 +24,7 @@ ul {
     padding-left: 0;
 }
 
-ul>li {
+ul > li {
     list-style: none;
 }
 
@@ -51,7 +51,7 @@ input {
 }
 
 :root {
-    --text-white-color: #FFFFFF;
+    --text-white-color: #ffffff;
     --text-size-medium: 1.6rem;
 }
 
@@ -64,7 +64,7 @@ input {
     padding: 1rem 3rem;
     border-radius: 5rem;
     font-size: var(--text-size-medium);
-    color: #FFFFFF;
+    color: #ffffff;
 }
 
 .block-center {
@@ -107,7 +107,7 @@ input {
 
 .header__button {
     margin-left: 55.3rem;
-    background: linear-gradient(94.26deg, #C89AFC 9.51%, #7C6AFA 90.23%);
+    background: linear-gradient(94.26deg, #c89afc 9.51%, #7c6afa 90.23%);
 }
 
 .main-display {
@@ -186,7 +186,7 @@ input {
 }
 
 .course__button {
-    background: linear-gradient(94.78deg, #DF5950 11.19%, #451046 93.72%);
+    background: linear-gradient(94.78deg, #df5950 11.19%, #451046 93.72%);
 }
 
 .course__counter {
@@ -201,9 +201,9 @@ input {
     margin-bottom: 10px;
 }
 
-.course__counter-line, 
+.course__counter-line,
 .course__progress-label {
-    color: #FFFFFF40;
+    color: #ffffff40;
 }
 
 .course__progress-label {
@@ -215,7 +215,7 @@ input {
 
 .course__number {
     font-weight: 700;
-    color: #FFFFFF;
+    color: #ffffff;
 }
 
 .course__progress {
@@ -230,7 +230,7 @@ input {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    color: #FFFFFF40;
+    color: #ffffff40;
 }
 
 progress,
@@ -242,27 +242,24 @@ progress:not([value]) {
 }
 
 progress::-webkit-progress-bar {
-    background: #FFFFFF;
+    background: #ffffff;
     height: 6px;
 }
 
 progress::-webkit-progress-value {
-    background: linear-gradient(94.78deg, #DF5950 11.19%, #451046 93.72%);
+    background: linear-gradient(94.78deg, #df5950 11.19%, #451046 93.72%);
     height: 6px;
 }
 
 progress {
-    background: #FFFFFF;
+    background: #ffffff;
     height: 6px;
 }
 
 progress::-moz-progress-value {
-    background: linear-gradient(94.78deg, #DF5950 11.19%, #451046 93.72%);
+    background: linear-gradient(94.78deg, #df5950 11.19%, #451046 93.72%);
     height: 6px;
 }
-
-
-
 
 .work {
     padding-top: 20rem;
@@ -331,15 +328,15 @@ progress::-moz-progress-value {
 }
 
 .process__columns:after {
-    content: '';
+    content: "";
     display: block;
     width: 130rem;
-    height: .2rem;
+    height: 0.2rem;
     position: absolute;
     top: 30rem;
     left: 50%;
     transform: translate(-50%, 0);
-    background: linear-gradient(94.26deg, #C89AFC 9.51%, #7C6AFA 90.23%);
+    background: linear-gradient(94.26deg, #c89afc 9.51%, #7c6afa 90.23%);
 }
 
 .process__item {
@@ -372,9 +369,9 @@ progress::-moz-progress-value {
 }
 
 .program__content::before {
-    content: '';
+    content: "";
     position: absolute;
-    background-image: url('../img/line.png');
+    background-image: url("../img/line.png");
     width: 86px;
     height: 100%;
     background-repeat: no-repeat;
@@ -383,7 +380,7 @@ progress::-moz-progress-value {
 }
 
 .program-line {
-    display: flex;    
+    display: flex;
     justify-content: space-between;
     width: 750px;
 }
@@ -396,7 +393,6 @@ progress::-moz-progress-value {
     text-align: left;
     margin-top: 76px;
 }
-
 
 .program__image {
     margin: 0 auto;
@@ -417,7 +413,7 @@ progress::-moz-progress-value {
     font-weight: 400;
     font-size: 16px;
     line-height: 160%;
-    color: #FFFFFF40;
+    color: #ffffff40;
     margin: 30px auto 80px auto;
 }
 
@@ -427,13 +423,21 @@ progress::-moz-progress-value {
 }
 
 .program-line__descr {
-    height: 0;
-    overflow: hidden;
+    /* height: 0;
+    overflow: hidden; */
+
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease 0s, visibility 0s ease 0.3s;
 }
 
 .program-line__descr.active {
-    height: auto;
-    overflow: auto;
+    /* height: auto;
+    overflow: auto; */
+
+    opacity: 1;
+    visibility: visible;
+    transition-delay: 0s;
 }
 
 .program-line__title {
@@ -441,7 +445,8 @@ progress::-moz-progress-value {
     font-weight: 400;
     font-size: 14px;
     line-height: 160%;
-    color: #FFFFFF40;
+    color: #ffffff40;
+    user-select: none;
 }
 
 .program-line__descr {
@@ -494,7 +499,7 @@ progress::-moz-progress-value {
 }
 
 .command__button {
-    border: .1rem solid #FFFFFF;
+    border: 0.1rem solid #ffffff;
     border-radius: 5rem;
     background-color: transparent;
     font-weight: 400;
@@ -525,7 +530,7 @@ progress::-moz-progress-value {
 }
 
 .assembly__button {
-    background: linear-gradient(94.78deg, #DF5950 11.19%, #451046 93.72%);
+    background: linear-gradient(94.78deg, #df5950 11.19%, #451046 93.72%);
     border-radius: 5rem;
     font-weight: 700;
     line-height: 150%;
@@ -539,7 +544,7 @@ progress::-moz-progress-value {
 .assembly__item {
     width: 5rem;
     height: 5rem;
-    background: linear-gradient(94.26deg, #C89AFC 9.51%, #7C6AFA 90.23%);
+    background: linear-gradient(94.26deg, #c89afc 9.51%, #7c6afa 90.23%);
     border-radius: 50%;
 }
 
@@ -563,14 +568,36 @@ progress::-moz-progress-value {
     z-index: 10;
     background: rgba(0, 0, 0, 0.5);
     padding: 3rem 0;
-    display: none;
+    /* display: none;*/
+
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease 0s, visibility 0s ease 0.3s;
+}
+
+.modal.active {
+    opacity: 1;
+    visibility: visible;
+    transition-delay: 0s;
+}
+
+.modal__close-button {
+    position: absolute;
+    z-index: 2;
+    width: 40px;
+    height: 40px;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
 }
 
 .modal__inner {
     width: 66.3rem;
     padding: 9rem 9.5rem;
-    background: #2C2C2C;
+    background: #2c2c2c;
     text-align: center;
+
+    position: relative;
 }
 
 .modal__header {
@@ -619,7 +646,7 @@ progress::-moz-progress-value {
 }
 
 .modal__button {
-    background: linear-gradient(94.78deg, #DF5950 11.19%, #451046 93.72%);
+    background: linear-gradient(94.78deg, #df5950 11.19%, #451046 93.72%);
 }
 
 .active {
@@ -664,7 +691,7 @@ progress::-moz-progress-value {
 
 @media (max-width: 80em) {
     html {
-        font-size: 7.2px
+        font-size: 7.2px;
     }
 }
 
