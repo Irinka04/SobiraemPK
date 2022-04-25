@@ -1,23 +1,26 @@
 'use strict';
+const smoothScroll = () => {
 
-const navbar = document.querySelector('.header__nav');
+    const navbar = document.querySelector('.header__nav');
 
-if (navbar) {
-    const links = navbar.querySelectorAll('a');
+    if (navbar) {
+        const links = navbar.querySelectorAll('a');
 
-    links.forEach(link => {
-        link.addEventListener('click', (e) => {
-            e.preventDefault();
+        links.forEach(link => {
+            link.addEventListener('click', (e) => {
+                e.preventDefault();
 
-            const section = document.querySelector(link.getAttribute('href'));
+                const section = document.querySelector(link.getAttribute('href'));
 
-            if (section) {
-                seamless.scrollIntoView(section, {
-                    behavior: "smooth",
-                    block: "start",
-                    inline: "center",
-                });
-            }
+                if (section) {
+                    seamless.scrollIntoView(section, {
+                        behavior: "smooth",
+                        block: "start",
+                        inline: "center",
+                    });
+                }
+            })
         })
-    })
+    }
 }
+smoothScroll();
